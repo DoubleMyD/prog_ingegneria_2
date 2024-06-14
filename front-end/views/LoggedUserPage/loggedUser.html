@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        #content {
+            width: 80%;
+            margin-top: 20px;
+        }
+        #pattern-info {
+            border: 1px solid #5a0f0f;
+            padding: 10px;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our Service</h1>
+    <div id="login-content">
+        <a href="/login-page">
+            <img src="path-to-your-image.jpg" alt="login of the image">     
+        </a>
+    </div>
+    <div id="login-content">
+        <a href="/administrator">
+            <img src="path-to-your-image.jpg" alt="Administrator of the image">     
+        </a>
+    </div>
+    
+    <svg height="100" width="100">
+        <circle id="myCircle" cx="50" cy="50" r="40" stroke="black" stroke-width="3" />
+    </svg>
+   
+    </div>
+    <script type="module">
+        import LoggedUserController from '././front-end/controllers/LoggedUserController.js';
+       
+        document.addEventListener('DOMContentLoaded', () => {
+            new LoggedUserController();
+        });
+
+    </script>
+</body>
+</html>

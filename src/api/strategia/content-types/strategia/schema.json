@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "strategias",
+  "info": {
+    "singularName": "strategia",
+    "pluralName": "strategias",
+    "displayName": "Strategia",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "patterns": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::pattern.pattern",
+      "inversedBy": "strategias"
+    },
+    "privacy_by_design_principles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::privacy-by-design-principle.privacy-by-design-principle"
+    },
+    "articoli_gdprs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::articoli-gdpr.articoli-gdpr"
+    }
+  }
+}
